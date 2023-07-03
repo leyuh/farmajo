@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/farmajo/static/css/main.3f5d82c2.css",
+    "main.js": "/farmajo/static/js/main.432f9fac.js",
+    "static/media/carrots.png": "/farmajo/static/media/carrots.7f2afe154222d2da29c7.png",
+    "static/media/well.png": "/farmajo/static/media/well.036bf68cf379c709961b.png",
+    "static/media/mint.png": "/farmajo/static/media/mint.914189bf5d7049a576be.png",
+    "static/media/marketplace.png": "/farmajo/static/media/marketplace.3b461b02bcee0ca8c37b.png",
+    "static/media/wheat.png": "/farmajo/static/media/wheat.4ee47a397cb69908839b.png",
+    "static/media/barn.png": "/farmajo/static/media/barn.2b11aea26aed8900c01d.png",
+    "static/media/strawberry.png": "/farmajo/static/media/strawberry.b0351996b419eb4ad6f1.png",
+    "static/media/lettuce.png": "/farmajo/static/media/lettuce.659f0220f8de9e337d7e.png",
+    "static/media/growing-crops.png": "/farmajo/static/media/growing-crops.459f1b7ace493ba6433d.png",
+    "static/media/orders-board.png": "/farmajo/static/media/orders-board.9147cda91a29182561ef.png",
+    "static/media/earth.png": "/farmajo/static/media/earth.12b09662226a76eb3232.png",
+    "index.html": "/farmajo/index.html",
+    "main.3f5d82c2.css.map": "/farmajo/static/css/main.3f5d82c2.css.map",
+    "main.432f9fac.js.map": "/farmajo/static/js/main.432f9fac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f5d82c2.css",
+    "static/js/main.432f9fac.js"
+  ]
+}
