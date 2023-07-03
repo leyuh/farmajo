@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/farmajo/static/css/main.3f5d82c2.css",
-    "main.js": "/farmajo/static/js/main.432f9fac.js",
+    "main.js": "/farmajo/static/js/main.e94e4497.js",
     "static/media/carrots.png": "/farmajo/static/media/carrots.7f2afe154222d2da29c7.png",
     "static/media/well.png": "/farmajo/static/media/well.036bf68cf379c709961b.png",
     "static/media/mint.png": "/farmajo/static/media/mint.914189bf5d7049a576be.png",
@@ -15,10 +15,10 @@
     "static/media/earth.png": "/farmajo/static/media/earth.12b09662226a76eb3232.png",
     "index.html": "/farmajo/index.html",
     "main.3f5d82c2.css.map": "/farmajo/static/css/main.3f5d82c2.css.map",
-    "main.432f9fac.js.map": "/farmajo/static/js/main.432f9fac.js.map"
+    "main.e94e4497.js.map": "/farmajo/static/js/main.e94e4497.js.map"
   },
   "entrypoints": [
     "static/css/main.3f5d82c2.css",
-    "static/js/main.432f9fac.js"
+    "static/js/main.e94e4497.js"
   ]
 }
