@@ -1,0 +1,116 @@
+#inventory-panel {
+    position: absolute;
+    height: 350px;
+    width: 500px;
+    background-color: #ded3bc;
+    left: calc(50% - 250px);
+    top: calc(50% - 175px);
+    border: 10px solid #7B583C;
+    border-radius: 20px;
+}
+
+#inv-grid {
+    height: 330px;
+    width: 430px;
+    left: 35px;
+    top: -45px;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-rows: repeat(auto-fill, 100px);
+
+    overflow-y: scroll;
+}
+
+.inv-crate-detail {
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 130px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    top: -123px;
+    left: -9px;
+    color:#7B583C;
+    z-index: 3;
+}
+
+.inv-crate-sign {
+    width: 68px;
+    height: 68px;
+    z-index: 5;
+    position: relative;
+    left: 6.5px;
+    top: 4px;
+    border-radius: 5px;
+}
+
+.inv-item-div {
+    background-color: #907055;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    border: 10px solid #7B583C;;
+    position: relative;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.inv-item-img {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    object-fit: contain;
+    z-index: 5;
+}
+
+.inv-item-name {
+    width: 150%;
+    left: -25%;
+    height: 25px;
+    position: relative;
+    bottom: 20px;
+    line-height: 25px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    z-index: 5;
+}
+
+.inv-item-quantity {
+    height: 30px;
+    width: 30px;
+
+    color: #111110;
+    font-size: 20px;
+    text-align: right;
+    position: relative;
+    top: -130px;
+    right: -50px;
+    z-index: 5;
+}
+
+@media only screen and (max-width: 100vh) {
+    #inventory-panel {
+        width: 340px;
+        height: 400px;
+        left: calc(50vw - 180px);
+        top: calc(50vh - 200px);
+    }
+    #inv-grid {
+        width: 340px;
+        height: 355px;
+        top: 18px;
+        position: relative;
+        left: 0px;
+    }
+}

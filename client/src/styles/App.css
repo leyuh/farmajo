@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #709751;
+    overflow: hidden;
+    font-family: "Roboto Slab";
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+}
+#app {
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+#buttons-panel {
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 5px;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+#buttons-panel > button {
+    z-index: 5;
+}
+#buttons-panel > button:hover {
+    cursor: pointer;
+}
+
+#leaderboard-btn {
+    height: 45px;
+    width: 45px;
+    top: -3px;
+    position: relative;
+}
+
+#leaderboard-btn > img:hover {
+    cursor: pointer;
+}
+
+#leaderboard-btn > img {
+    height: 45px;
+    width: 45px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+#coins-display {
+    height: 50px;
+    width: 100px;
+    pointer-events: none;
+}
+
+#coins-display > img {
+    height: 25px;
+    width: 25px;
+    left: 0px;
+    top: 10px;
+    position: relative;
+    object-fit: contain;
+}
+
+#coins-display > h3 {
+    height: 40px;
+    width: 65px;
+    text-align: left;
+    position: relative;
+    top: -50px;
+    left: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+h1:hover { cursor: default; }
+h2:hover { cursor: default; }
+h3:hover { cursor: default; }
+h4:hover { cursor: default; }
+h5:hover { cursor: default; }
+h6:hover { cursor: default; }
+
+#farm-land {
+    position: relative;
+    height: min(70vh, 70vw);
+    width: min(70vh, 70vw);
+    top: 15vh;
+    left: 30px;
+    border: 15px solid #634b39;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 25fr);
+    grid-template-rows: repeat(4, 25fr);
+    gap: 0px;
+}
+
+#buildings-div {
+    position: relative;
+    height: min(70vh, 70vw);
+    width: min(60vh, 60vw);
+    left: calc(100px + min(70vh, 70vw));
+    top: -55vh;
+
+    overflow: hidden;
+}
+
+#buildings-div > div > img:hover {
+    cursor: pointer;
+}
+
+#buildings-div > div {
+    position: relative;
+    margin: 40px;
+}
+
+#barn {
+    height: 30%;
+    width: 30%;
+    left: 20px;
+}
+
+#well {
+    height: 15%;
+    width: 15%;
+    float: right;
+    right: 50px;
+}
+
+#marketplace {
+    height: 20%;
+    width: 20%;
+    float: right;
+    right: 50px;
+}
+
+#orders-board {
+    height: 20%;
+    width: 20%;
+}
+
+#buildings-div > div > img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 100vh) {
+    #farm-land {
+        height: 90vw;
+        width: 90vw;
+        left: calc(5vw - 15px);
+        top: 90px;
+    }
+
+    #buildings-div {
+        height: 50vw;
+        width: 90vw;
+        left: 5vw;
+        top: 100px;
+    }
+
+    #buildings-div > div {
+        margin: 5px;
+    }
+
+    #barn {
+        height: 50%;
+        width: 50%;
+    }
+    #well {
+        height: 25%;
+        width: 25%;
+        right: 0px;
+    }
+    #orders-board {
+        height: 35%;
+        width: 35%;
+        float: right;
+    }
+    #marketplace {
+        height: 40%;
+        width: 40%;
+        float: right;
+        top: -85%;
+        left: 20%;
+    }
+}
+
+.acre {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3fr);
+    grid-template-rows: repeat(3, 33.3fr);
+    gap: 0px;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+
+}
+
+.available-acre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acre-price-label {
+    color: inherit;
+    position: relative;
+    text-align: center;
+    height: min-content;
+    width: calc(100% - 16px);
+    height: min-content;
+    font-size: 25px !important;
+    pointer-events: none;
+}
+
+.available-acre:hover {
+    border: 8px dashed #3e7a23;
+    color: #3e7a23;
+    cursor: pointer;
+}
+
+.plot {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 0;
+    min-width: 0;
+}
+
+
+.plot:hover {
+    background-color: rgba(55, 175, 255, 0.4) !important;
+    cursor: pointer;
+}
+
+.growing-crops-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.finished-crop-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+#well > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.waterSelected {
+    cursor: url("../images/water-drop.png"), pointer !important;
+}
+
+.waterSelected > #farm-land > .acre > .plot {
+    cursor: url("../images/water-drop.png"), pointer !important;
+}
+
+.finished-crop-img:hover {
+    cursor: url("../images/sickle.png"), pointer !important;
+}
+
+.close-btn {
+    height: 40px;
+    width: 40px;
+    color: rgb(26, 26, 26);
+    font-family: inherit;
+    font-weight: bold;
+    right: 0px;
+    float: right;
+    top: 0px;
+    position: absolute;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+
+.close-btn:hover {
+    cursor: grab;
+}
+
+.board-title {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 10px solid #7B583C;
+    background-color: #907055;
+    position: relative;
+    height: 40px;
+    width: 300px;
+    margin: 0;
+    left: calc(50% - 160px);
+    top: -60px;
+}
+
+.board-title > h1 {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    top: -20px;
+    position: relative;
+}

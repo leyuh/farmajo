@@ -1,0 +1,398 @@
+#marketplace-panel {
+    position: absolute;
+    height: 510px;
+    width: 800px;
+    background-color: #ded3bc;
+    left: calc(50% - 400px);
+    top: calc(50% - 255px);
+    border: 10px solid #7B583C;
+    border-radius: 20px;
+    overflow: visible;
+    z-index: 10;
+}
+
+.marketplace-grid {
+    border: 0px solid black;
+    height: 450px;
+    position: relative;
+    left: 15px;
+    top: -95px;
+    background-color: #d2c6ad;
+    padding: 5px 0px 5px 0px;
+
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+#my-sales-grid {
+    height: 120px;
+    margin-bottom: -30px;
+}
+
+#other-sales-grid {
+    height: 260px;
+}
+
+.marketplace-section-title {
+    color: rgb(26, 26, 26);
+    font-size: 30px;
+    height: 45px;
+    width: 250px;
+    position: relative;
+    top: -70px;
+    left: 15px;
+}
+
+.full-grid {
+    width: 750px;
+    grid-template-columns: repeat(5, 120px);
+    grid-template-rows: repeat(auto-fill, 120px);
+}
+
+.mini-grid {
+    width: 450px;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(auto-fill, 120px);
+}
+
+#add-sale-btn {
+    background-color: #72a357;
+    border: 5px solid #538836;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    border-radius: 10px;
+}
+
+#add-sale-btn > h1:hover {
+    cursor: pointer;
+}
+
+#add-sale-btn > h1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: -55px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.sale-div {
+    height: 110px;
+    width: 110px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #907055;
+    border: 5px solid #7B583C;
+}
+
+.purchased-sale {
+    background-color: rgb(162, 162, 162);
+    border: 5px solid rgb(127, 127, 127);
+}
+
+.purchased-sale > .sale-price {
+    background-color: rgb(127, 127, 127);
+}
+
+.sale-div:hover {
+    cursor: pointer;
+}
+
+.sale-div > * {
+    pointer-events: none;
+}
+
+.sale-img {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 0%;
+}
+
+.sale-quantity {
+    height: 30px;
+    width: 40px;
+    float: right;
+    top: calc(-100% - 5px);
+    right: 5px;
+    position: relative;
+    text-align: right;
+    font-size: 25px;
+    color: rgb(26, 26, 26);
+}
+
+.sale-price {
+    background-color: #7B583C;
+    width: 100%;
+    left: 0px;
+    height: 30px;
+    top: calc(-100% + 5px);
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+}
+
+.side-panel {
+    width: 300px;
+    height: 100%;
+    background-color: #907055;
+    border: 10px solid #7B583C;
+    position: relative;
+    top: calc(-100% - 100px);
+    right: -10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    float: right;
+}
+
+#new-sale-panel > h1 {
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    pointer-events: none;
+}
+
+#new-sale-panel > h3 {
+    width: 94%;
+    height: 30px;
+    left: 3%;
+    position: relative;
+    color: rgb(26, 26, 26);
+    text-align: left;
+    font-size: 20px;
+    top: -10px;
+}
+
+#new-sale-inv-grid {
+    width: calc(100% - 10px);
+    left: 0px;
+    position: relative;
+    background-color: #ded3bc;
+    height: 120px;
+    top: -30px;
+    padding-top: 10px;
+    border: 5px solid #d2c6ad;
+
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.new-sale-inv-item {
+    background-color: #907055;
+    border-radius: 10px;
+    border: 3px solid #7B583C;
+    color: rgb(26, 26, 26);
+}
+
+.new-sale-inv-item > img {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 18%;
+}
+
+.new-sale-inv-item > *:hover {
+    cursor: pointer;
+}
+
+.new-sale-inv-item > h3 {
+    height: 30px;
+    width: 50px;
+    float: right;
+    top: calc(-100% - 10px);
+    position: relative;
+    text-align: right;
+    right: 3px;
+    z-index: 5;
+    font-size: 15px;
+    color: inherit;
+}
+
+.selected-new-sale-product {
+    border: 3px solid white;
+    color: white;
+}
+
+#quantity-label {
+    position: relative;
+    top: -30px !important;
+}
+
+#price-label {
+    position: relative;
+    top: -60px !important;
+}
+
+.new-sale-amount-div {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    top: -55px;
+    position: relative;
+}
+
+#new-sale-price-div {
+    top: -85px;
+}
+
+
+.new-sale-amount-div > h3 {
+    width: 50px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    top: -22px;
+    font-size: 25px;
+    pointer-events: none;
+    color: white;
+}
+
+.new-sale-amount-div > button:hover {
+    cursor: pointer;
+}
+
+.new-sale-amount-div > button {
+    height: 25px;
+    width: 30px;
+    top: 7px;
+    position: relative;
+    border: 0px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    line-height: 0px;
+    border: 3px solid #d2c6ad;
+    color: rgb(26, 26, 26);
+    background-color: #ded3bc;
+}
+
+#new-sale-post-btn {
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    border: 5px solid #538836;
+    background-color: #72a357;
+    color: white;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 16px;
+    left: calc(50% - 60px);
+    position: relative;
+    top: -70px;
+}
+
+#new-sale-post-btn:hover {
+    cursor: pointer;
+}
+
+#sale-panel > h2 {
+    color: rgb(210, 210, 210);
+    width: 100%;
+    left: 0px;
+    top: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    pointer-events: none;
+    z-index: 5;
+}
+
+#sale-panel > img {
+    height: 175px;
+    width: 100%;
+    top: -5px;
+    position: relative;
+    left: 0px;
+    object-fit: contain;
+}
+
+#sale-panel > ul {
+    list-style: none;
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    top: -10px;
+    pointer-events: none;
+}
+
+#sale-panel > ul > li {
+    left: -20px;
+    position: relative;
+    width: 100%;
+    margin: 5px;
+}
+
+#buy-sale-btn {
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    border: 5px solid #538836;
+    background-color: #72a357;
+    color: white;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 16px;
+    left: calc(50% - 60px);
+    position: relative;
+    top: 0px;
+}
+
+#buy-sale-btn:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 100vh) {
+    #marketplace-panel {
+        width: 94vw;
+        left: calc(3vw - 10px);
+    }
+    
+    .full-grid {
+        width: 94vw;
+        grid-template-columns: repeat(2, 120px);
+        grid-template-rows: repeat(auto-fill, 120px);
+        left: 0px;
+    }
+    
+    .mini-grid {
+        width: 94vw;
+        grid-template-columns: repeat(2, 120px);
+        grid-template-rows: repeat(auto-fill, 120px);
+        left: 0px;
+    }
+
+    .side-panel {
+        top: -610px;
+    }
+
+}

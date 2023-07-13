@@ -1,0 +1,10 @@
+green: #93BA73
+orange: #CB9956
+tan: #D5BA90
+darker tan: #AA9067
+even darker tan: #726045;
+blackish: #111110;
+red: #BB5F50
+blue: #4787B4
+gray: #4A4A48
+off white: #e4e4e4

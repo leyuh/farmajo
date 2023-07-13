@@ -1,0 +1,25 @@
+#crop-progress-bar {
+    position: relative;
+    top: -25%;
+    width: 90%;
+    height: 15%;
+    left: calc(5% - 2px);
+}
+
+#crop-progress-bar-bg {
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: relative;
+    background-color: rgb(167, 212, 226);
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+#crop-progress-bar-filler {
+    height: 100%;
+    left: 0px;
+    background-color: rgb(114, 185, 207);
+    border-radius: 8px;
+}

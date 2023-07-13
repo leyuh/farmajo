@@ -1,0 +1,60 @@
+#plantMenu {
+    position: relative;
+    height: 50px;
+    left: calc(100% + 5px);
+    width: 160px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #D5BA90;
+    border: 3px solid #726045;
+    border-radius: 10px;
+
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(1, 50px);
+    z-index: 5;
+    padding: 5px;
+    scrollbar-width: 0px !important;
+}
+
+.plantMenuItem {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.plantMenuItem > img {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+}
+
+.plantMenuItem > h5 {
+    height: 22px;
+    width: 22px;
+    color: white;
+    left: 28px;
+    background-color: #726045;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 900;
+    font-size: 16px;
+    position: relative;
+    top: -53px;
+    z-index: 10;
+}
+
+.unlocked:hover {
+    cursor: pointer;
+}

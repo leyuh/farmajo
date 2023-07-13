@@ -1,0 +1,108 @@
+
+#leaderboard-div {
+    position: absolute;
+    height: 500px;
+    width: 350px;
+    background-color:  #ded3bc;
+    left: calc(50% - 185px);
+    top: calc(50% - 250px);
+    border: 10px solid #7B583C;
+    border-radius: 20px;
+}
+
+#leaderboard-search-bar {
+    width: 290px;
+    left: 10px;
+    position: relative;
+    top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 18px;
+    font-family: inherit;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+#leaderboard-div > .close-btn {
+    top: 8px;
+}
+
+#users-list {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 330px;
+    left: 10px;
+    position: relative;
+    top: 20px;
+    height: 430px;
+}
+
+.user-div {
+    background-color: #907055;
+    border-radius: 10px;
+    border: 5px solid #7B583C;
+    width: 320px;
+    height: 45px;
+    left: 5px;
+    margin-bottom: 10px;
+}
+
+.user-farm-name {
+    height: 35px;
+    width: 200px;
+    position: relative;
+    top: -10px;
+    left: 10px;
+    font-size: 22px;
+    color: white;
+}
+
+.user-farm-id {
+    height: 15px;
+    width: 100px;
+    position: relative;
+    top: -35px;
+    left: 10px;
+    font-size: 20px;
+    z-index: 5;
+    font-size: 12px;
+    color: rgb(157, 157, 157);
+}
+
+.user-level {
+    color: white;
+    height: 40px;
+    width: 40px;
+    float: right;
+    right: 5px;
+    top: -90px;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+
+.user-level-label {
+    height: 15px;
+    width: 40px;
+    float: right;
+    right: -35px;
+    top: -60px;
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+
+.top-1 > .user-level {
+    color: rgb(255, 212, 82);
+}
+
+.top-2 > .user-level {
+    color: rgb(204, 204, 204);
+}
+
+.top-3 > .user-level {
+    color: #de9446;
+}

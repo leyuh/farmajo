@@ -1,0 +1,126 @@
+#level-display {
+    position: fixed;
+    height: 50px;
+    width: 320px;
+    z-index: 10;
+
+    left: calc(50% - 160px);
+    top: 0px;
+    cursor: default !important;
+}
+
+#level-name-div {
+    position: absolute;
+    background-color: #907055;
+    height: 35px;
+    width: 180px;
+    z-index: 5;
+    left: calc(50% - 90px);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 3px solid #7B583C;
+    top: 2px;
+    color: white;
+}
+
+#level-name-div > h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    height: 20px;
+    top: -10px;
+    position: relative;
+    font-weight: 500;
+}
+
+#rename-btn {
+    background-color: rgba(0, 0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border: 0px;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+}
+
+#rename-btn > img {
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    object-fit: contain;
+    z-index: 5;
+}
+
+#rename-btn > img:hover {
+    cursor: pointer !important;
+}
+
+#new-farm-name-input {
+    position: absolute;
+    z-index: 5;
+    background-color: #AA9067;
+    border: 1px solid white;
+    height: 21px;
+    color: white;
+    font-size: 15px;
+    font-family: inherit;
+    width: 140px;
+    left: 25px;
+}
+
+#level-bar-background {
+    background-color: #e9c782;
+    border-radius: 25px;
+    border: 3px solid white;
+    z-index: 6;
+    height: 20px;
+    width: 100%;
+    left: -5px;
+    position: relative;
+    top: 40px;
+}
+
+#level-bar {
+    background-color: #ddad4f;
+    border-radius: 25px;
+    z-index: 7;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#level-div {
+    border-radius: 25px;
+    height: 36px;
+    width: 36px;
+    background-color: #907055;
+    border: 3px solid #7B583C;
+    z-index: 8;
+    position: absolute;
+    left: calc(50% - 21px);
+    top: 50px;
+}
+
+#farm-id {
+    text-align: center;
+    color: rgb(157, 157, 157);
+    height: 15px;
+    z-index: 10;
+    width: 100%;
+    top: 12px;
+    line-height: 15px;
+    position: absolute;
+    font-size: 10px;
+}
+
+#level-div > h3 {
+    color: white;
+    text-align: center;
+    top: -15px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+}

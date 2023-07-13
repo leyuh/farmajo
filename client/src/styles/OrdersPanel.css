@@ -1,0 +1,92 @@
+#orders-panel {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    background-color: #ded3bc;
+    left: calc(50% - 300px);
+    top: calc(50% - 200px);
+    border: 10px solid #7B583C;
+    border-radius: 20px;
+    overflow: visible;
+}
+
+
+#orders-grid {
+    height: 360px;
+    width: 560px;
+    top: -25px;
+    position: relative;
+    left: 20px;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: center;
+    gap: 15px;
+    overflow-y: scroll;
+}
+
+.order {
+    background-color: #ededed;
+    border-radius: 5px;
+}
+
+.order > *:hover {
+    cursor: url("../images/check.png"), pointer !important;
+}
+.order > * > *:hover {
+    cursor: url("../images/check.png"), pointer !important;
+}
+.order:hover {
+    cursor: url("../images/check.png"), pointer !important;
+}
+
+#items-list {
+    position: relative;
+    width: 120px;
+    left: 5px;
+    height: 70px;
+    top: -10px;
+}
+
+#items-list > li {
+    font-weight: bold;
+    position: relative;
+    list-style: none;
+    text-align: left;
+    left: -30px;
+    font-size: 16px;
+}
+
+.order > h3 {
+    position:relative;
+    width: 140px;
+    left: 5px;
+    top: -25px;
+    margin: 0px;
+    height: 22px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 100vh) {
+    #orders-panel {
+        width: 94vw;
+        left: calc(3vw - 10px);
+    }
+    #orders-grid {
+        width: 100%;
+        height: calc(100% - 50px);;
+        left: 0px;
+        top: -60px;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 150px);
+    }
+    #board-title {
+        width: 250px;
+        left: calc(47vw - 125px);
+    }
+}
